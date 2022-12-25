@@ -1,5 +1,7 @@
 import { Component } from 'react';
 import { Card } from './Card/Card';
+import { CardList } from './CardList/CardList';
+// import users from '../data/users.json';
 
 export class App extends Component {
   state = {
@@ -13,11 +15,9 @@ export class App extends Component {
 
   componentDidMount() {
     const status = JSON.parse(localStorage.getItem('follow'));
-    console.log('status', status);
 
     if (status === null) {
       localStorage.setItem('follow', JSON.stringify(this.state));
-      console.log('status', status);
     } else if (status.isFollowing !== this.state.isFollowing) {
       this.setState({ ...status });
     }
@@ -57,4 +57,51 @@ export class App extends Component {
       />
     );
   }
+  //================================================================================
+  // state = {
+  //   data: users,
+  // };
+
+  // componentDidMount() {
+  //   const status = JSON.parse(localStorage.getItem('follow'));
+
+  //   if (status === null) {
+  //     localStorage.setItem('follow', JSON.stringify(this.state));
+  //   } else if (status.isFollowing !== this.state.isFollowing) {
+  //     this.setState({ ...status });
+  //   }
+  // }
+
+  // componentDidUpdate(prevProps, prevState) {
+  //   if (this.state.isFollowing !== prevState.isFollowing) {
+  //     localStorage.setItem('follow', JSON.stringify(this.state));
+  //   }
+  // }
+  // onFollow = userid => {
+  //   const user = this.state.data.find(el => el.id === userid);
+  //   if (!user.isFollowing) {
+  //     this.setState(prevState => ({
+  //       followers: prevState.followers + 1,
+  //       isFollowing: true,
+  //     }));
+  //   } else {
+  //     this.setState(prevState => ({
+  //       followers: prevState.followers - 1,
+  //       isFollowing: false,
+  //     }));
+  //   }
+  // };
+
+  // render() {
+  //   const { isFollowing } = this.state;
+
+  //   return (
+  //     <CardList
+  //       users={this.state.data}
+  //       isFollowing={isFollowing}
+  //       onFollow={this.onFollow}
+  //     />
+  //   );
+  // }
+  //==================================================================================
 }

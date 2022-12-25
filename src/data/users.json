@@ -1,0 +1,39 @@
+
+[
+    {
+    "id": 1,
+    "user": "Elon Reeve Musk",
+    "tweets": 425,
+    "followers": 1235,
+    "avatar": "https://www.w3schools.com/howto/img_avatar2.png"
+    },
+    {
+    "id": 2,
+    "user": "Abr Babr",
+    "tweets": 52,
+    "followers": 145,
+    "avatar": "https://www.w3schools.com/w3images/avatar2.png"
+    },
+    {
+    "id": 3,
+    "user": "Yakor Oleg",
+    "tweets": 13,
+    "followers": 853,
+    "avatar": "https://www.w3schools.com/howto/img_avatar.png"
+    },
+    {
+    "id": 4,
+    "user": "Potrusi Pipiskoi",
+    "tweets": 785,
+    "followers": 7525,
+    "avatar": "https://www.w3schools.com/w3images/avatar6.png"
+    },
+    {
+    "id": 5,
+    "user": "Diesel Man",
+    "tweets": 25,
+    "followers": 14,
+    "avatar": "https://www.w3schools.com/w3images/avatar6.png"
+    }
+]
+

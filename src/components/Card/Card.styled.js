@@ -1,10 +1,9 @@
 import styled from 'styled-components';
-
-import Img from './picture.svg';
+import img from '../../img/picture.svg';
 
 export const UserCard = styled.div`
   margin: 0 auto;
-  background-image: url(${Img}),
+  background-image: url(${img}),
     linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
   background-repeat: no-repeat, no-repeat;
   background-position: 52px 34px, center;

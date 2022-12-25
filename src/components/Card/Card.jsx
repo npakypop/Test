@@ -1,10 +1,9 @@
-import logo from './logo1.svg';
-import cicle from './cicle.png';
-import rect from './rect.png';
+import logo from '../../img/logo1.svg';
+import cicle from '../../img/cicle.png';
+import rect from '../../img/rect.png';
 
 import {
   Avatar,
-  Username,
   Tweets,
   Followers,
   FollowBtn,
@@ -16,14 +15,7 @@ import {
   AvatarWrp,
 } from './Card.styled.js';
 
-export const Card = ({
-  avatar,
-  tweets,
-  followers,
-  isFollowing,
-  user,
-  onFollow,
-}) => {
+export const Card = ({ avatar, tweets, followers, isFollowing, onFollow }) => {
   return (
     <UserCard>
       <Logo src={logo} alt="logo" />
@@ -33,7 +25,6 @@ export const Card = ({
         <Cicle src={cicle} alt="" />
       </AvatarWrp>
       <Info>
-        {/* <Username>{user}</Username> */}
         <Tweets>{tweets} TWEETS</Tweets>
         <Followers>{followers} FOLLOWERS</Followers>
       </Info>
