@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { Card } from './Card/Card';
-import { CardList } from './CardList/CardList';
+// import { CardList } from './CardList/CardList';
 // import users from '../data/users.json';
 
 export class App extends Component {
