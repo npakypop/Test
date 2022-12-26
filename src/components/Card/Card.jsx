@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import logo from '../../img/logo1.svg';
 import cicle from '../../img/cicle.png';
 import rect from '../../img/rect.png';
@@ -33,4 +34,12 @@ export const Card = ({ avatar, tweets, followers, isFollowing, onFollow }) => {
       </FollowBtn>
     </UserCard>
   );
+};
+
+Card.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  followers: PropTypes.number.isRequired,
+  isFollowing: PropTypes.bool,
+  onFollow: PropTypes.func.isRequired,
+  tweets: PropTypes.number.isRequired,
 };
