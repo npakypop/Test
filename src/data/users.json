@@ -23,7 +23,7 @@
     },
     {
     "id": 4,
-    "user": "Potrusi Pipiskoi",
+    "user": "Potrusi Valera",
     "tweets": 785,
     "followers": 7525,
     "avatar": "https://www.w3schools.com/w3images/avatar6.png"
@@ -34,6 +34,13 @@
     "tweets": 25,
     "followers": 14,
     "avatar": "https://www.w3schools.com/w3images/avatar6.png"
+    },
+    {
+    "id": 6,
+    "user": "Diesel Woomen",
+    "tweets": 25625,
+    "followers": 1425,
+    "avatar": "https://www.w3schools.com/w3images/avatar2.png"
     }
 ]
 

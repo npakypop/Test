@@ -26,7 +26,7 @@ export const Card = ({ avatar, tweets, followers, isFollowing, onFollow }) => {
       </AvatarWrp>
       <Info>
         <Tweets>{tweets} TWEETS</Tweets>
-        <Followers>{followers} FOLLOWERS</Followers>
+        <Followers>{followers.toLocaleString('en')} FOLLOWERS</Followers>
       </Info>
       <FollowBtn type="button" onClick={onFollow} isFollowing={isFollowing}>
         {isFollowing ? 'Following' : 'Follow'}
