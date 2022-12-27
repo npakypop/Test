@@ -1,6 +1,7 @@
 import { Component } from 'react';
 // import { Card } from './Card/Card';
 import { CardList } from './CardList/CardList';
+import { Section } from './Section/Section.styled';
 import users from '../data/users.json';
 
 // export class App extends Component {
@@ -96,8 +97,9 @@ export class App extends Component {
 
   render() {
     return (
-      <CardList users={this.state.data} onFollow={this.onFollow} />
-      // <div>asddfg</div>
+      <Section>
+        <CardList users={this.state.data} onFollow={this.onFollow} />
+      </Section>
     );
   }
   //==================================================================================

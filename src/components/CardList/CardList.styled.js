@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const UserList = styled.ul`
-  padding: 40px 30px;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 `;

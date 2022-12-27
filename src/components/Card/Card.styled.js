@@ -76,6 +76,7 @@ export const Avatar = styled.img`
   left: 50%;
   transform: translate(-50%);
 `;
+
 export const Cicle = styled.img`
   position: relative;
   top: 0;
