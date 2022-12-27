@@ -5,16 +5,16 @@ import users from '../data/users.json';
 
 export class App extends Component {
   state = {
-    data: users,
+    data: JSON.parse(localStorage.getItem('follow')) ?? users,
   };
 
-  componentDidMount() {
-    console.log(this.state.data);
-    const status = JSON.parse(localStorage.getItem('follow'));
-    if (status) {
-      this.setState({ data: status });
-    }
-  }
+  // componentDidMount() {
+  //   console.log('users from state', this.state.data);
+  //   const status = JSON.parse(localStorage.getItem('follow'));
+  //   if (status) {
+  //     this.setState({ data: status });
+  //   }
+  // }
 
   componentDidUpdate(_, prevState) {
     if (prevState.data !== this.state.data) {
