@@ -64,6 +64,7 @@ export class App extends Component {
   };
 
   componentDidMount() {
+    console.log(this.state.data);
     const status = JSON.parse(localStorage.getItem('follow'));
     if (status) {
       this.setState({ data: status });
@@ -94,7 +95,10 @@ export class App extends Component {
   };
 
   render() {
-    return <CardList users={this.state.data} onFollow={this.onFollow} />;
+    return (
+      <CardList users={this.state.data} onFollow={this.onFollow} />
+      // <div>asddfg</div>
+    );
   }
   //==================================================================================
 }

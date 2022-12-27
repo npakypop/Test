@@ -51,6 +51,12 @@ export const FollowBtn = styled.button`
   text-transform: uppercase;
   color: #373737;
   cursor: pointer;
+  transition: box-shadow 250ms ease 0s;
+  transition: transform 250ms ease 0s;
+  &:hover {
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+  }
 `;
 
 export const AvatarWrp = styled.div`
